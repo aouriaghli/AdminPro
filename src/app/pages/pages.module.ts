@@ -6,7 +6,6 @@ import { ComponentsModule } from '../components/components.module';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
-import { NgChartsModule } from 'ng2-charts'
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
@@ -30,6 +29,6 @@ import { PagesComponent } from './pages.component';
     PagesComponent,
   ],
 
-  imports: [ FormsModule, CommonModule, NgChartsModule, SharedModule,RouterModule, ComponentsModule  ]
+  imports: [ FormsModule, CommonModule,  SharedModule,RouterModule, ComponentsModule  ]
 })
 export class PagesModule { }
