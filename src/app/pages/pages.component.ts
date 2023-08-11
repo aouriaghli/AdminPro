@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   ]
 })
 export class PagesComponent {
-
+    year = new Date().getFullYear();
 }
