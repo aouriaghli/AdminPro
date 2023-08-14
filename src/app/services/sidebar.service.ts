@@ -10,9 +10,10 @@ export class SidebarService {
       icono: 'mdi mdi-gauge',
       submenu:[
         { titulo: 'Main', url:'/'},
-        { titulo: 'ProgressBard', url:'progress'}, //sin poner la barra antes de progress, si pongo la barra tendria que poner tb dashboard /dashboard/progress
         { titulo: 'Gráficas', url:'grafica1'},
+        { titulo: 'ProgressBard', url:'progress'}, //sin poner la barra antes de progress, si pongo la barra tendria que poner tb dashboard /dashboard/progress
         { titulo: 'Promesas', url:'promesas'},
+        { titulo: 'Rxjs', url:'rxjs'},
       ]
     }
   ];
