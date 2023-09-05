@@ -29,3 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Instalacion para graficas
 npm install --save ng2-charts
 npm install --save chart.js
+
+# Instalacion para Pop-ups
+npm install sweetalert2
