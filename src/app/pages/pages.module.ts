@@ -5,6 +5,7 @@ import { ComponentsModule } from '../components/components.module';
 
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PipesModule } from '../pipes/pipes.module';
 
 
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
@@ -16,6 +17,10 @@ import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { UsuariosComponent } from './mantenimientos/usuarios/usuarios.component';
+import { HospitalesComponent } from './mantenimientos/hospitales/hospitales.component';
+import { MedicosComponent } from './mantenimientos/medicos/medicos.component';
+import { MedicoComponent } from './mantenimientos/medicos/medico.component';
+
 
 
 
@@ -31,6 +36,9 @@ import { UsuariosComponent } from './mantenimientos/usuarios/usuarios.component'
     RxjsComponent,
     PerfilComponent,
     UsuariosComponent,
+    HospitalesComponent,
+    MedicosComponent,
+    MedicoComponent,
   ],
   exports: [
     AccountSettingsComponent,
@@ -42,6 +50,6 @@ import { UsuariosComponent } from './mantenimientos/usuarios/usuarios.component'
     RxjsComponent,
   ],
 
-  imports: [ FormsModule, CommonModule,  SharedModule,RouterModule, ComponentsModule, ReactiveFormsModule  ]
+  imports: [ FormsModule, CommonModule,  SharedModule,RouterModule, ComponentsModule, ReactiveFormsModule, PipesModule  ]
 })
 export class PagesModule { }
