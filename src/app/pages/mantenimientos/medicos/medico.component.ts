@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { delay } from 'rxjs';
 import { Hospital } from 'src/app/models/hospital.model';
 import { Medico } from 'src/app/models/medico.model';
 import { HospitalService } from 'src/app/services/hospital.service';
@@ -78,7 +79,11 @@ export class MedicoComponent implements OnInit {
 
     if ( id === 'nuevo' ) { return; }
 
-    this.medicoService.obtenerMedicoById(id).subscribe( (medico:Medico) => {
+    this.medicoService.obtenerMedicoById(id)
+    .pipe(
+      delay(250)
+    )
+    .subscribe( (medico:Medico) => {
 
       if (!medico){
         this.router.navigateByUrl(`/dashboard/medicos`);
